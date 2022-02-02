@@ -1,0 +1,6 @@
+function izhod = binaryVectorToHex(vhod)
+izhod = zeros(1,size(vhod,1));
+for i = 1: size(vhod,1)
+    
+    izhod(i) = dec2hex(bin2dec( sprintf('%d',(vhod(i,:)))));
+end
